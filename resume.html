@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-bottom: 50px; /* Adjust according to your footer height */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #add8e6;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav ul li a i {
+            margin-right: 5px; /* Adjust spacing between icon and text */
+        }
+
+        nav ul li a:hover {
+            background-color: #add8e6;
+            color: #000;
+            transition: 0.3s;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            margin-top: 60px; /* Adjusted margin to accommodate fixed header */
+            background-color: #222;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #add8e6;
+        }
+
+        .resume-section {
+            margin-bottom: 20px;
+        }
+
+        .resume-section h3 {
+            margin: 0;
+        }
+
+        .resume-section p {
+            margin: 5px 0;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #add8e6;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .download-button:hover {
+            background-color: #5f9ea0;
+            transition: 0.3s;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            font-size: 12px;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .social-icons li {
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            color: #add8e6;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="skills.html"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+                <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <main>
+        <section id="resume">
+            <h2>Resume</h2>
+            <div class="resume-section">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <p>K. Ramakrishnan College of Engineering - B.Tech in Artificial Intelligence and Machine Learning</p>
+                <p>Year: Batch: 2021 - 2025</p>
+                <p>Bharathi Matric Higher Secondary School (HSLC)</p>
+                <p>Year: Completed: 2019 - 2021</p>
+                <p>Bharathi Matric Higher Secondary School (SSLC)</p>
+                <p>Year: Completed: 2019</p>
+            </div>
+            <div class="resume-section">
+                <h3><i class="fas fa-cogs"></i> Skills</h3>
+                <p>Python</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>SQL</p>
+                <p>AWS</p>
+                <p>Power BI</p>
+                <p>Salesforce tools</p>
+            </div>
+            <div class="resume-section">
+                <h3><i class="fas fa-laptop-code"></i> Projects</h3>
+                <div class="project-item">
+                    <h4>Wine Quality Prediction</h4>
+                    <p><strong>Description:</strong></p>
+                    <p>The Wine Quality Prediction project aims to develop a machine learning model that predicts the quality of wine based on various input variables such as acidity levels, residual sugar, pH, alcohol content, etc. The dataset used typically includes a variety of red and white wine samples, each rated by experts. Machine learning algorithms such as regression or classification are employed to train models on historical data to predict the quality of new wine samples. The project involves data preprocessing, feature engineering, model selection, and evaluation to achieve accurate predictions. It's a practical application of machine learning in the wine industry for quality assurance and enhancement.</p>
+                </div>
+                <div class="project-item">
+                    <h4>Student Grade Prediction</h4>
+                    <p><strong>Description:</strong></p>
+                    <p>The Student Grade Prediction project involves using machine learning techniques to predict the academic performance of students based on various factors such as study time, previous grades, family background, demographics, etc. The project uses historical student data to train models that can predict whether a student will pass or fail a course, achieve a certain grade, or require additional support. Techniques like classification algorithms (e.g., logistic regression, decision trees) are typically applied to build the predictive models. The goal is to provide insights that can help educators intervene early to support struggling students and optimize educational outcomes.</p>
+                </div>
+                <div class="project-item">
+                    <h4>Waiter Tips Analysis</h4>
+                    <p><strong>Description:</strong></p>
+                    <p>The Waiter Tips Analysis project focuses on exploring a dataset containing information about restaurant transactions, including details like bill amount, tip amount, day of the week, time of day, waiter serving, etc. The project aims to uncover patterns and insights regarding tipping behavior. Techniques such as data visualization, statistical analysis, and possibly machine learning (e.g., regression for predicting tips) are used to analyze factors influencing tipping habits. The project could also involve building a predictive model to estimate tips based on various parameters. Insights gained can help restaurants and waitstaff optimize service and increase tips.</p>
+                </div>
+                <div class="project-item">
+                    <h4>Language Detection</h4>
+                    <p><strong>Description:</strong></p>
+                    <p>The Language Detection project involves developing a system that automatically detects the language of a given text snippet or document. This project is particularly useful in multilingual environments such as social media, customer support, and content localization. Natural Language Processing (NLP) techniques are employed to preprocess text data, extract features, and build models that classify text into different languages. Techniques such as text classification (e.g., using machine learning algorithms like Naive Bayes, SVM, or deep learning models) and language identification libraries (e.g., langdetect in Python) are utilized. The project aims to accurately identify languages regardless of the text's length or complexity, facilitating language-specific processing and analysis in various applications.</p>
+                </div>
+            </div>
+            <div class="resume-section">
+                <h3><i class="fas fa-certificate"></i> Certificates & Achievements</h3>
+                <p>Certified in AWS Cloud Computing</p>
+                <p>Certified in Salesforce Administration</p>
+            </div>
+            <div class="resume-section">
+                <h3><i class="fas fa-laptop-code"></i> Coding Platforms</h3>
+                <p>LeetCode: <a href="https://leetcode.com/Kishore_Sakthivel/" target="_blank">https://leetcode.com/Kishore_Sakthivel/</a></p>
+                <p>HackerRank: <a href="https://www.hackerrank.com/profile/kishore136820" target="_blank">https://www.hackerrank.com/profile/kishore136820</a></p>
+            </div>
+            <div class="resume-section">
+                <h3><i class="fas fa-envelope"></i> Contact</h3>
+                <p>Email: kishore136820@gmail.com</p>
+                <p>Phone: 7010352122</p>
+                <p>Address: No.10, near Annai Thersha College, Thammapatty, Salem, Tamil Nadu, 636113</p>
+            </div>
+            <div class="resume-section">
+                <a href="https://drive.google.com/file/d/1AYjMhmutOsdwq-rT68w4H3o7jIusyvOs/view?usp=drivesdk" download class="download-button">Download Resume</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/kishore-sakthivel-2b2936251" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/_kishore.s_18" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100034093244266" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        </ul>
+        <p>&copy; 2024 Kishore Sakthivel</p>
+    </footer>
+</body>
+</html>
